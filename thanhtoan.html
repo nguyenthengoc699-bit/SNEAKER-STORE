@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Sneaker Store</title>
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">SNEAKER<span>STORE</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Tiếp tục mua sắm</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="checkout-container">
+        
+        <div class="billing-details">
+            <h2>Thông Tin Giao Hàng</h2>
+            <form action="#" class="checkout-form">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" id="fullname" placeholder="Nhập họ tên của bạn" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email (Tùy chọn)</label>
+                    <input type="email" id="email" placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Địa chỉ nhận hàng</label>
+                    <input type="text" id="address" placeholder="Số nhà, phường/xã, quận/huyện..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="note">Ghi chú đơn hàng</label>
+                    <textarea id="note" rows="3" placeholder="Ví dụ: Giao hàng giờ hành chính..."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="order-summary">
+            <h2>Đơn Hàng Của Bạn</h2>
+            
+            <div class="order-items">
+                <div class="order-item">
+                    <div class="item-info">
+                        <p class="item-name">Nike Air Jordan (Size 41)</p>
+                        <p class="item-qty">x 1</p>
+                    </div>
+                    <p class="item-price">3.500.000 ₫</p>
+                </div>
+
+                <div class="order-item">
+                    <div class="item-info">
+                        <p class="item-name">Puma RS-X (Size 40)</p>
+                        <p class="item-qty">x 1</p>
+                    </div>
+                    <p class="item-price">1.900.000 ₫</p>
+                </div>
+            </div>
+
+            <div class="order-total">
+                <p>Tạm tính: <span>5.400.000 ₫</span></p>
+                <p>Phí vận chuyển: <span>30.000 ₫</span></p>
+                <hr>
+                <p class="total-price">Tổng cộng: <span>5.430.000 ₫</span></p>
+            </div>
+
+            <div class="payment-method">
+                <h3>Phương thức thanh toán</h3>
+                <label>
+                    <input type="radio" name="payment" checked> Thanh toán khi nhận hàng (COD)
+                </label>
+                <label>
+                    <input type="radio" name="payment"> Chuyển khoản ngân hàng
+                </label>
+            </div>
+
+            <button class="btn-checkout">ĐẶT HÀNG NGAY</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sneaker Store. Thiết kế bởi Gemini.</p>
+    </footer>
+
+</body>
+</html>
